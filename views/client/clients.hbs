@@ -1,0 +1,56 @@
+<style>
+  body{
+    background-color: powderblue;
+  }
+</style>
+
+
+<div>
+  <a href="/"><button class="btn btn-xl btn-outline-dark">Home</button></a>
+</div>
+
+<div class="row">
+  <div class="col text-center pt-3">
+    <h1>Clients</h1>
+  </div>
+  <div class="col-12 d-flex justify-content-end"><a href="/addclient" type="button"
+      class="btn btn-outline-dark align-self-center">Add Client</a></div>
+</div>
+</br>
+
+{{#if removedUser}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  User has been removed.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+<div class="col-md-12">
+  <table class="client table table-dark table-bordered table-responsive table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Country</th>
+        <th scope="col">Website</th>
+        <th scope="col" class="text-end" style="width:  14%">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each rows}}
+      <tr>
+        <th scope="row">{{this.client_id}}</th>
+        <td>{{this.company_name}}</td>
+        <td>{{this.address}}</td>
+        <td>{{this.country}}</td>
+        <td>{{this.website}}</td>
+        <td class="text-end">
+          <a href="/viewclient/{{this.client_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-eye"></i></a>
+          <a href="/editclient/{{this.client_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-pencil"></i></a>
+          <a href="/clients/{{this.client_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-person-x"></i> </a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

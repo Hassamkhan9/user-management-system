@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-image: url('bg.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;        
+    }    
+    .column {
+      float:    left;
+      width:    21%;
+      padding:  10px;
+      margin:   20px;
+      height:   215px;
+    }
+    .tile {
+      background-color: #292b2c;
+      opacity: 0.8;
+      border-radius: 25px;
+      color: white;
+      transition: 0.3s;
+      border: salmon solid 2px;
+    }
+    .tile:hover {
+      background-color: #292b2c;
+      color: salmon;
+      border: #292b2c 1px;
+      opacity: 1;
+      font-style: underline;
+      font-size:32px;
+    }
+    .tile-text {
+      text-align:center;
+      padding-top: 85px;
+      font-size:30px;
+    }
+    .tile-text:hover{
+      color: salmon;
+      border: #292b2c 1px;
+      font-size:32px;
+      font-style: bold;
+    }
+    a{
+      color: aliceblue;
+      text-align: center;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #292b2c;
+    }
+  </style>
+</head>
+<body>
+  <a href="clients">
+  <div class="column tile">
+    <h2 class="tile-text">Clients</h2>
+  </div>
+  </a>
+  <a href="clientDues">
+  <div class="column tile">
+    <h2 class="tile-text">Client Dues</h2>
+  </div>
+  </a>
+  <a href="supplier">
+  <div class="column tile">
+    <h2 class="tile-text">Suppliers</h2>
+  </div>
+  </a>
+  <a href="supplierDues">
+  <div class="column tile">
+    <h2 class="tile-text">Supplier Dues</h2>
+  </div>
+  </a>
+  <a href="">
+  <div class="column tile">
+    <h2 class="tile-text"></h2></div>
+  </a>
+  <a href="invoice.html">
+  <div class="column tile">
+    <h2 class="tile-text">Invoice</h2>
+  </div>
+  </a>
+  <a href="products">
+  <div class="column tile">
+    <h2 class="tile-text">Products</h2>
+  </div>
+  </a>
+  <a href="">
+  <div class="column tile">
+    <h2 class="tile-text"></h2>
+  </div>
+  </a>
+</body>
+</html>

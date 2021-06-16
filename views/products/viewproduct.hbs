@@ -1,0 +1,123 @@
+<style>
+    body {
+        background-color: powderblue;
+    }
+</style> 
+
+
+
+<div class="pt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/products">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Supplier</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="view-supplier">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3>{{this.company_name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    <table class="table table-dark table-bordered table-responsive table-responsive-xl ">
+        <tr>
+            <th class="p-3" >Category</th>
+            <td class="p-3">{{this.category}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Product Type</th>
+            <td class="p-3">{{this.product_type}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Description</th>
+            <td class="p-3">{{this.description}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Size(in Mega Pixels)</th>
+            <td class="p-3">{{this.size}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Interface</th>
+            <td class="p-3">{{this.interface}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Lens Make</th>
+            <td class="p-3">{{this.lens_make}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Lens Part Number</th>
+            <td class="p-3">{{this.lens_part}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >VCM Make</th>
+            <td class="p-3">{{this.vcm_make}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >VCM Part Number</th>
+            <td class="p-3">{{this.vcm_part}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Sensor Make</th>
+            <td class="p-3">{{this.sensor_make}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Sensor Part Number</th>
+            <td class="p-3">{{this.sensor_part_number}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Customer</th>
+            <td class="p-3">{{this.customer}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Project Name</th>
+            <td class="p-3">{{this.project_name}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Customer Product ID</th>
+            <td class="p-3">{{this.customer_product_id}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Supplier</th>
+            <td class="p-3">{{this.supplier}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Supplier Project</th>
+            <td class="p-3">{{this.supplier_project}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Approved Version</th>
+            <td class="p-3">{{this.approved_version}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Supplier Product ID</th>
+            <td class="p-3">{{this.supplier_product_id}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Buying Price</th>
+            <td class="p-3">{{this.buying_price}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Selling Price</th>
+            <td class="p-3">{{this.selling_price}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Margin</th>
+            <td class="p-3">{{this.margin}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Margin Percentage</th>
+            <td class="p-3">{{this.margin_percentage}}</td>
+        </tr>
+        <tr>
+            <th class="p-3" >Annual Volume</th>
+            <td class="p-3">{{this.annual_volume}}</td>
+        </tr>
+    </table>
+  </div>
+  {{/each}}
+</div>

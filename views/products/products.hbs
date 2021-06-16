@@ -1,0 +1,50 @@
+<style>
+    body {
+        background-color: powderblue;
+    }
+</style>
+
+<div>
+  <a href="/"><button class="btn btn-outline-dark">Home</button></a>
+</div>
+<div class="row">
+  <div class="col text-center pt-3">
+    <h1>Products</h1>
+  </div>
+  <div class="col-12 d-flex justify-content-end"><a href="/addproduct" type="button"
+      class="btn btn-outline-dark align-self-center">Add Product</a></div>
+</div>
+</br>
+
+<div class="col-md-12">
+  <table class="supplier table table-dark table-bordered table-responsive table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Category</th>
+        <th scope="col">Product Type</th>
+        <th scope="col">Project Name</th>
+        <th scope="col">Supplier</th>
+        <th scope="col">Description</th>
+        <th scope="col" class="text-end" style="width:  14%">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      {{#each rows}}
+        <th scope="row">{{this.products_id}}</th>
+        <td>{{this.category}}</td>
+        <td>{{this.product_type}}</td>
+        <td>{{this.project_name}}</td>
+        <td>{{this.supplier}}</td>
+        <td>{{this.description}}</td>
+        <td class="text-end">
+          <a href="/viewproduct/{{this.products_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-eye"></i></a>
+          <a href="/editproduct/{{this.products_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-pencil"></i></a>
+          <a href="/products/{{this.products_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-person-x"></i> </a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

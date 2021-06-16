@@ -1,0 +1,168 @@
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Category</label>
+        <div class="col-sm-10">
+            <select class="form-select" aria-label="Default select example" name="category" value="{{this.category}}">
+                {{#select category}}
+                <option selected disabled>Open this select menu</option>
+                <option value="LCD">LCD</option>
+                <option value="TFT">TFT</option>
+                <option value="Camera Module">Camera Module</option>
+                <option value="Backlight">Backlight</option>
+                <option value="Lens">Lens</option>
+                <option value="OLED">OLED</option>
+                <option value="PC Sheets">PC Sheets</option>
+                <option value="Zebra Connectors">Zebra Connectors</option>
+                <option value="Protective Films">Protective Films</option>
+                <option value="AMOLED">AMOLED</option>
+                <option value="Optical Binding">Optical Binding</option>
+                {{/select}}
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Product Type</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.product_type}}" name="product_type" placeholder="Address">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Description</label>
+        <div class="col-sm-10">
+            <textarea class="form-control" placeholder="Description" id="floatingTextarea2" style="height: 100px" name="description">{{this.description}}</textarea>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Size</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.size}}" name="size" placeholder="Size">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Interface</label>
+        <div class="col-sm-10">
+            <select class="form-select" aria-label="Default select example" name="category" value="{{this.interface}}">
+                {{#select interface}}
+                <option value="MIPI">MIPI</option>
+                <option value="RGB">RGB</option>
+                <option value="LVDS">LVDS</option>
+                {{/select}}
+            </select>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Lens Make</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.lens_make}}" name="lens_make" placeholder="Lens Make">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Lens Part Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.lens_part}}" name="lens_part" placeholder="Lens Part Number">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">VCM Make</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.vcm_make}}" name="vcm_make" placeholder="VCM Make">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">VCM Part Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.vcm_part}}" name="vcm_part" placeholder="VCM Part Number">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Sensor Make</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.sensor_make}}" name="sensor_make" placeholder="Sensor Make">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Sensor Part Number</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.sensor_part}}" name="sensor_part" placeholder="Sensor Part Number">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Customer</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.customer}}" name="customer" placeholder="Customer">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Project Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.project_name}}" name="project_name" placeholder="Project Name">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Customer Product ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.custome_product_id}}" name="custome_product_id" placeholder="Customer Product ID">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Supplier</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.supplier}}" name="supplier" placeholder="Supplier">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Supplier Project</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.supplier_project}}" name="supplier_project" placeholder="Supplier Project">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Approved Version</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.approved_version}}" name="approved_version" placeholder="Approved Version">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Approved Date</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.approved_date}}" name="approved_date" placeholder="Approved Date">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Supplier Product ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.supplier_product_id}}" name="supplier_product_id" placeholder="Supplier Product ID">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Buying Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.buying_price}}" name="buying_price" placeholder="Buying Price">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Selling Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.selling_price}}" name="selling_price" placeholder="Selling Price">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Margin</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.margin}}" name="margin" placeholder="Margin">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Margin Percentage</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.margin_percentage}}" name="margin_percentage" placeholder="Margin Percentage">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="" class="col-sm-2 col-form-label">Annual Volume</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="colFormLabel" value="{{this.annual_volume}}" name="annual_volume" placeholder="Annual Volume">
+        </div>
+    </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>

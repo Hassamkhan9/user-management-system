@@ -1,0 +1,109 @@
+<style>
+    body {
+        background-color: powderblue;
+    }
+</style>
+
+<div class="pt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/clients">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View Client</li>
+        </ol>
+    </nav>
+</div>
+
+<div class="view-user">
+  {{#each rows}}
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h3>{{this.Client_Name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    <table class="table table-dark table-bordered table-responsive table-responsive-xl ">
+        <tr>
+            <th class="p-3" >Company Name</th>
+            <td class="p-3">{{this.company_name}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Address</th>
+            <td class="p-3">{{this.address}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Country</th>
+            <td class="p-3">{{this.country}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Website</th>
+            <td class="p-3">{{this.website}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Category</th>
+            <td class="p-3">{{this.category}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Contact Person</th>
+            <td class="p-3">{{this.contact_person}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Contact Number</th>
+            <td class="p-3">{{this.contact_number}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Designation</th>
+            <td class="p-3">{{this.contact_designation}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Email</th>
+            <td class="p-3">{{this.contact_email}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Purcahsing Person</th>
+            <td class="p-3">{{this.purchasing_person}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Number</th>
+            <td class="p-3">{{this.purchasing_number}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Designation</th>
+            <td class="p-3">{{this.purchasing_designation}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Email</th>
+            <td class="p-3">{{this.purchasing_email}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">R&amp;D Person</th>
+            <td class="p-3">{{this.rnd_person}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">R&amp;D Number</th>
+            <td class="p-3">{{this.rnd_number}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">R&amp;D Designation</th>
+            <td class="p-3">{{this.rnd_designation}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">R&amp;D Email</th>
+            <td class="p-3">{{this.rnd_email}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Ship To</th>
+            <td class="p-3">{{this.ship_to}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Bill To</th>
+            <td class="p-3">{{this.bill_to}}</td>
+        </tr>
+        <tr>
+            <th class="p-3">Payment Terms</th>
+            <td class="p-3">{{this.payment_terms}}</td>
+        </tr>
+    </table>
+  </div>
+  {{/each}}
+</div>

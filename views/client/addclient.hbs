@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Add Client</title>
+  <style>
+    body {
+        background-color: powderblue;
+    }
+  </style>  
+</head>
+<body>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/clients">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Add Client</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+<h2 style="">Add New Client</h2>
+<br>
+<form action="/addclient" class="row g-3 needs-validation" method="post" novalidate>
+{{> clientforms}}
+</form>
+
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<style>
+    body {
+        background-color: powderblue;
+    }
+</style>
+
+<div>
+  <a href="/"><button class="btn btn-outline-dark">Home</button></a>
+</div>
+<div class="row">
+  <div class="col text-center pt-3">
+    <h1>Suppliers Dues</h1>
+  </div>
+  <div class="col-12 d-flex justify-content-end"><a href="/addsupplier" type="button"
+      class="btn btn-outline-dark align-self-center">Add Supplier</a></div>
+</div>
+</br>
+
+<div class="col-md-12">
+  <table class="supplier table table-dark table-bordered table-responsive table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Company Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Country</th>
+        <th scope="col">Website</th>
+        <th scope="col" class="text-end" style="width:  14%">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+      {{#each rows}}
+        <th scope="row">{{this.supplier_id}}</th>
+        <td>{{this.company_name}}</td>
+        <td>{{this.address}}</td>
+        <td>{{this.country}}</td>
+        <td>{{this.website}}</td>
+        <td class="text-end">
+          <a href="/viewsupplier/{{this.supplier_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-eye"></i></a>
+          <a href="/editsupplier/{{this.supplier_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-pencil"></i></a>
+          <a href="/{{this.supplier_id}}" type="button" class="btn btn-light btn-small"> <i class="bi bi-person-x"></i> </a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

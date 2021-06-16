@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Product</title>
+  <style>
+    body {
+        background-color: powderblue;
+    }
+</style>
+</head>
+<body>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/products">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Product</li>
+  </ol>
+</nav>
+<h2 style="color: #767676; font-family: Garamond, Helvetica, sans-serif">Edit Product</h2>
+
+
+{{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+{{#each rows}}
+<form class="row g-3 needs-validation" action="/editproduct/{{this.products_id}}" method="POST" novalidate>
+  {{> productforms}}
+</form>
+{{/each}}
+</body>
+</html>
